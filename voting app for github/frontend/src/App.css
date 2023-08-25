@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container, .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #8E2DE2, #4A00E0); /* purple gradient */
+}
+
+.title, .welcome-message{
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin: 10px;
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8); /* slightly transparent white */
+}
+
+.button {
+  margin: 10px;
+  height: 45px;
+  width: 250px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  color: #4A00E0; /* purple text */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #4A00E0;
+  color: #fff;
+}
+
+.box-title {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  padding: 10px 20px; /* Some padding around the text */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+  margin-bottom: 20px; /* Space between box and input fields */
+}
+.box-title h1 {
+  color: #8E2DE2; /* The purple gradient color */
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.welcome-message {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connected-account {
+  color: #fff;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.connected-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.connected-button:hover {
+  background-color: #0069d9;
+}
+
+.connected-contract-address {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+.candidates-table tbody tr {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.candidates-table th, .candidates-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.candidates-table th {
+  background-color: #f2f2f2;
+}
+.candidates-table tbody tr:hover {
+  background-color: #8E2DE2; /* Change this color as per your theme */
+}
+.candidates-table tbody tr.selected {
+  background-color: #8E2DE2;
+}
+
+.candidates-table {
+  width: 80%; /* Set the width to 80% of the container */
+  border-collapse: collapse;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: auto; /* Center the table horizontally */
+  margin-right: auto;
+}
+
+.candidates-table td {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: left;
+}
+
+.candidates-table th {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: left;
+  color: #8E2DE2; /* The purple gradient color */
+}
+
+.candidates-table tr.selected {
+  background-color: #4A00E0;
+  color: #fff;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-panel, .right-panel {
+  width: 45%; /* Adjust according to your needs */
+}
+
+.polls-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poll-container {
+  flex: 1 1 calc(50% - 10px); /* Assuming a 10px gap between the containers */
+  box-sizing: border-box;
+  margin: 5px; /* Half of the gap */
+}
+
+
